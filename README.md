@@ -1,6 +1,6 @@
 # Welcome to Battleship! 
 
-<img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/3868258/battleship-clipart-md.png" width="200" height="200" />
+<img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/3868258/battleship-clipart-md.png" width="450" height="200" />
 
 ### You will be given _5 ships_:
 
@@ -16,7 +16,7 @@ These ships will be randomly assigned a position on the 10x10 grid that is print
 
 In this game, you will be playing against the computer in a game of battleship:
 
-[![Screenshot-2023-12-02-141526.png](https://i.postimg.cc/ZnKNhjVj/Screenshot-2023-12-02-141526.png)](https://postimg.cc/gXQjVy96)
+<img src="https://i.postimg.cc/ZnKNhjVj/Screenshot-2023-12-02-141526.png" width="500" height="520" />
 
 ### Key:
 - □ = empty spot
