@@ -12,7 +12,7 @@
 
 - 2 Boats (**_1 Square_**)
 
-These ships will be randomly assigned a position on the 10x10 grid that is printed to the right of your screen.
+These ships will be randomly assigned a position on the 10x10 grid that is printed to the console.
 
 In this game, you will be playing against the computer in a game of battleship:
 
