@@ -16,7 +16,7 @@ These ships will be randomly assigned a position on the 10x10 grid that is print
 
 In this game, you will be playing against the computer in a game of battleship:
 
-![Screenshot 2023-06-13 10](Screenshot%202023-06-13%2010.49.36%20AM.png)
+[![Screenshot-2023-12-02-141526.png](https://i.postimg.cc/ZnKNhjVj/Screenshot-2023-12-02-141526.png)](https://postimg.cc/gXQjVy96)
 
 ### Key:
 - □ = empty spot
