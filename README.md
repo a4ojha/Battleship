@@ -1,5 +1,6 @@
 # Welcome to Battleship! 
 
+<img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/3868258/battleship-clipart-md.png" width="200" height="200" />
 ![](https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/3868258/battleship-clipart-md.png)
 
 ### You will be given _5 ships_:
