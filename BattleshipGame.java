@@ -39,7 +39,13 @@ public class BattleshipGame {
       String ans2 = sc.next();
     }
     else {
-      System.out.println("Here we go!");
+      System.out.println("\nHere we go!");
+      // Delay 1 second
+      try {
+        Thread.sleep(1000);
+      } catch (InterruptedException e) {
+        Thread.currentThread().interrupt();
+      }
     }
   }
 
