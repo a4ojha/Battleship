@@ -1,5 +1,10 @@
 # Welcome to Battleship! 
 
+## Description ##
+This is an in-console Java implementation of the classic Battleship game, played between the user and CPU. I created this project to practice OOP (object oriented programming) through the use of inheritance and polymorphism. For future updates I hope to implement a drowned ship detection system, and an overall better looking UI. 
+
+## Rules ##
+
 <img src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/3868258/battleship-clipart-md.png" width="450" height="200" />
 
 ### You will be given _5 ships_:
