@@ -1,7 +1,18 @@
-# Welcome to Battleship! 
+# Welcome to Battleship! #
 
-## Description ##
+## Description
 This is an in-console Java implementation of the classic Battleship game, played between the user and CPU. I created this project to practice OOP (object oriented programming) through the use of inheritance and polymorphism. For future updates I hope to implement a drowned ship detection system, and an overall better looking UI. 
+
+## Instructions ##
+Ensure Java is installed on your device (install [here](https://www.java.com/en/download/help/download_options.html "(target|_blank)"))
+Download the following files into a _single_ folder:
+- [BattleshipGame.java](BattleshipGame.java)
+- [CPU.java](CPU.java)
+- [Main.java](Main.java)
+- [Player.java](Player.java)
+- [Ship.java](Ship.java)
+
+Run Main.java on your IDE, game will now be playable on your console
 
 ## Rules ##
 
