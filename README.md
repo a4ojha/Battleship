@@ -5,7 +5,7 @@ This is an in-console Java implementation of the classic Battleship game, played
 
 ## Instructions ##
 Ensure Java is installed on your device (install [here](https://www.java.com/en/download/help/download_options.html "(target|_blank)"))
-Download the following files into a _single_ folder:
+Download the following files into a _single_ folder or clone this repo:
 - [BattleshipGame.java](BattleshipGame.java)
 - [CPU.java](CPU.java)
 - [Main.java](Main.java)
