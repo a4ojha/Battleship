@@ -25,7 +25,7 @@ public class BattleshipGame {
   // Preconditions: None
   // Postconditions: Prints instructions on how to play the game
   public void printInstructions() {
-    System.out.println("\nIn this game, you will be playing against the computer in a game of battleship.\nYou will be able to see your 10 x 10 grid, composed of your 5 ships that have been randomly placed on the grid.\n\nEach player has: 1 large ship (5 spaces), 1 medium ship (3 spaces) 1 medium-ish ship (2 spaces) and 2 small ships (1 space each). Ships are marked with an 'X'\n\nYou and the computer will take turns firing shots at each other's grid, without seeing each other's ship placement.\n\nThe goal is to destroy all 5 of your opponent's ships! \nOnce either you or the CPU wins, both boards will be displayed to reveal possible leftover ships of your opponent. Good luck and have fun!\n\nReady to play? (y)");
+    System.out.println("In this game, you will be playing against the computer in a game of battleship.\nYou will be able to see your 10 x 10 grid, composed of your 5 ships that have been randomly placed on the grid.\n\nEach player has: 1 large ship (5 spaces), 1 medium ship (3 spaces) 1 medium-ish ship (2 spaces) and 2 small ships (1 space each). Ships are marked with an 'X'\n\nYou and the computer will take turns firing shots at each other's grid, without seeing each other's ship placement.\n\nThe goal is to destroy all 5 of your opponent's ships! \nOnce either you or the CPU wins, both boards will be displayed to reveal possible leftover ships of your opponent. Good luck and have fun!\n\nSee more instructions at: https://github.com/a4ojha/battleship?tab=readme-ov-file#rules\n\nReady to play? (y)");
   }
 
   // Preconditions: None
@@ -35,10 +35,11 @@ public class BattleshipGame {
     System.out.println("Welcome to battleship!\nWould you like to read the instructions? (y) or (n)");
     String ans = sc.next();
     if (ans.equals("y")) {
+      clearScreen();
       printInstructions();
       String ans2 = sc.next();
     }
-    else {
+    else if (ans.equals("n")){
       System.out.println("\nHere we go!");
       // Delay 1 second
       try {
@@ -46,6 +47,10 @@ public class BattleshipGame {
       } catch (InterruptedException e) {
         Thread.currentThread().interrupt();
       }
+    }
+    else {
+      System.out.println("Invalid input. Please try again.");
+      greet();
     }
   }
 
@@ -103,6 +108,8 @@ public class BattleshipGame {
         opponent.displayHiddenBoard();
 
         // User attacks CPU
+        System.out.println("\nYour's remaining ship cells: " + thePlayer.numUnits);
+        System.out.println("Opponent's remaining ship cells: " + opponent.numUnits);
         System.out.println("\nTime to attack! \nGive coordinates of where you want to fire on the opponent's grid: ");
 
         int attackX = 0;
@@ -173,9 +180,21 @@ public class BattleshipGame {
     // Game's over, display who wins
     if (playerWins) {
       System.out.println("You win!! Good job!\nHere are the final grids:\n");
+      
+      // Delay 2 seconds
+      try {
+        Thread.sleep(2000);
+      } catch (InterruptedException e) {
+        Thread.currentThread().interrupt();
+      }
     }
     else {
       System.out.println("You lose...\nHere are the final grids:\n");
+      try {
+        Thread.sleep(2000);
+      } catch (InterruptedException e) {
+        Thread.currentThread().interrupt();
+      }
     }
     
     thePlayer.displayBoard();

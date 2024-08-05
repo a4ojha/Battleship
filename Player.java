@@ -41,7 +41,7 @@ public class Player {
       // Reset board
       for (int i = 0; i < 10; i++) {
         for (int j = 0; j < 10; j++) {
-          board[i][j] = "□";
+          board[i][j] = "O";
         }
       }
     
@@ -80,12 +80,12 @@ public class Player {
   }
 
   // Preconditions: None
-  // Postconditions: The 'board' variable is initialized with a blank game board, where each cell is set to "□".
+  // Postconditions: The 'board' variable is initialized with a blank game board, where each cell is set to "O".
   public void initializeBoard() {
     // Make blank game board
     for (int i = 0; i < 10; i++) {
       for (int j = 0; j < 10; j++) {
-        board[i][j] = "□";
+        board[i][j] = "O";
       }
     }
     
@@ -94,7 +94,7 @@ public class Player {
   }
 
   // Preconditions: The 'board' variable must be initialized with valid data representing the game board. The 'x' and 'y' parameters should be within the valid range of indices for the 'board' array.
-  // Postconditions: The cell at coordinates (x, y) on the 'board' variable is updated based on the attack result. If the cell contains "X", indicating a ship, it is updated to "■" to represent a hit, and the 'numUnits' variable is decremented. If the cell does not contain "X", it is updated to "◪" to represent a miss.
+  // Postconditions: The cell at coordinates (x, y) on the 'board' variable is updated based on the attack result. If the cell contains "X", indicating a ship, it is updated to "■" to represent a hit, and the 'numUnits' variable is decremented. If the cell does not contain "X", it is updated to "/" to represent a miss.
   public void receiveAttack(int x, int y) {
     if (board[x][y].equals("X")) {
       // Enemy has hit a ship
@@ -103,7 +103,7 @@ public class Player {
     }
     else {
       // Missed
-      board[x][y] = "◪";
+      board[x][y] = "/";
     }
   }
 

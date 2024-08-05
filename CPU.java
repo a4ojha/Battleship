@@ -16,7 +16,7 @@ public class CPU extends Player {
   }
 
   // Preconditions: The 'board' variable must be initialized with valid data representing the opponent's grid.
-  // Postconditions: The opponent's grid is displayed on the console, hiding the ships and replacing them with '□', while other cells are shown as per their original values.
+  // Postconditions: The opponent's grid is displayed on the console, hiding the ships and replacing them with 'O', while other cells are shown as per their original values.
   public void displayHiddenBoard() {
     System.out.println("Opponent grid:\n");
     System.out.println("   0 1 2 3 4 5 6 7 8 9");
@@ -29,7 +29,7 @@ public class CPU extends Player {
           System.out.print(board[i][j] + " ");
         }
         else {
-          System.out.print("□" + " ");
+          System.out.print("O" + " ");
         }
         
       }
